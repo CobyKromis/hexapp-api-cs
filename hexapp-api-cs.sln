@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hexapp-api-cs", "hexapp-api-cs\hexapp-api-cs.csproj", "{0AF9C957-9599-41DD-A0BD-3A34C2801D54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AF9C957-9599-41DD-A0BD-3A34C2801D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AF9C957-9599-41DD-A0BD-3A34C2801D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AF9C957-9599-41DD-A0BD-3A34C2801D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AF9C957-9599-41DD-A0BD-3A34C2801D54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A7CE606-5F63-43C8-A0C4-7C664609949B}
+	EndGlobalSection
+EndGlobal
