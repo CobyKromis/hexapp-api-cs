@@ -1,4 +1,5 @@
 ﻿using System;
+using hexapp_api_cs.Models;
 using hexapp_api_cs.Models.Authentication;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -15,6 +16,7 @@ namespace hexapp_api_cs
 
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Token> Tokens { get; set; }
+        public virtual DbSet<HealthMetric> HealthMetrics { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -70,6 +72,17 @@ namespace hexapp_api_cs
                 entity.Property(e => e.Type)
                     .HasMaxLength(10)
                     .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<HealthMetric>(entity =>
+            {
+                entity.HasKey(e => e.HealthMetricId)
+                    .HasName("HealthMetric_pk")
+                    .IsClustered(false);
+
+                entity.ToTable("HealthMetric");
+
+                entity.Property(e => e.EntryDate).HasColumnType("date");
             });
 
             OnModelCreatingPartial(modelBuilder);
