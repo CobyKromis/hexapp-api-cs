@@ -1,4 +1,5 @@
 using hexapp_api_cs.Models;
+using hexapp_api_cs.Services;
 using hexapp_api_cs.Services.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -48,6 +49,8 @@ namespace hexapp_api_cs
 
             services.AddSingleton<UserService>();
             services.AddSingleton<TokenService>();
+
+            services.AddSingleton<HealthMetricService>();
 
             services
                 .AddControllers()

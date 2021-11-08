@@ -1,5 +1,7 @@
 ﻿using hexapp_api_cs.Helpers.Authentication;
+using hexapp_api_cs.Models;
 using hexapp_api_cs.Models.Authentication;
+using hexapp_api_cs.Services;
 using hexapp_api_cs.Services.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
