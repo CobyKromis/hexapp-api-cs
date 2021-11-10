@@ -63,9 +63,10 @@ namespace hexapp_api_cs
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "HexApp API v1"));
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "HexApp API v1"));
 
             app.UseCors("CorsPolicy");
             app.UseRouting();

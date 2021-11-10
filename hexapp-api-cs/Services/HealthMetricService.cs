@@ -34,7 +34,7 @@ namespace hexapp_api_cs.Services
 
         public async Task<List<HealthMetric>> GetToday(int userId)
         {
-            return await _context.HeatlhMetrics.Where(e => e.UserId == userId && e.EntryDate = DateTime.UtcNow.Date).ToListAsync();
+            return await _context.HealthMetrics.Where(e => e.UserId == userId && e.EntryDate == DateTime.UtcNow.Date).ToListAsync();
         }
     }
 }
